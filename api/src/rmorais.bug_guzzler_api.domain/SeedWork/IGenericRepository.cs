@@ -1,0 +1,8 @@
+namespace rmorais.bug_guzzler_api.domain.SeedWork;
+using rmorais.bug_guzzler_api.domain.SeedWork;
+public interface IGenericRepository<TAggregate>: IRepository
+{
+       public Task Insert(TAggregate aggregate,CancellationToken cancellationToken);
+       public Task<TAggregate>Get(Guid id,CancellationToken cancellationToken);
+
+}
