@@ -1,6 +1,5 @@
 using FluentAssertions;
 using Moq;
-using rmorais.bug_guzzler_api.application.Exceptions;
 using useCase=rmorais.bug_guzzler_api.application.UseCases.Requirement;
 using rmorais.bug_guzzler_api.Application.Interfaces;
 using rmorais.bug_guzzler_api.domain.Entity;

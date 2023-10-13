@@ -33,4 +33,9 @@ public class Requirement : AggregateRoot
     {
         DomainValidation.NotNull(Description, nameof(Description));
     }
+
+    public void Update(string? description=null){
+      //  this.Description= String.IsNullOrEmpty(description)?this.Description:description;
+      this.Description= description??this.Description;
+    }
 }
