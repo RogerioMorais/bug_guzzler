@@ -1,4 +1,4 @@
-﻿namespace rmorais.bug_guzzler_api.application.UseCases.Requirement.GetRequirement;
+﻿namespace rmorais.bug_guzzler_api.application.UseCases.Requirement;
 
 public class GetRequentOutput
 {
