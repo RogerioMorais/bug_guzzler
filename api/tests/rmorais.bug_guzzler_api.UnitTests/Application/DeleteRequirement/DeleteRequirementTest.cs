@@ -5,7 +5,7 @@ using rmorais.bug_guzzler.Application.Interfaces;
 using rmorais.bug_guzzler.domain.Entity;
 using rmorais.bug_guzzler.domain.Repository;
 
-namespace rmorais.bug_guzzler_api.UnitTests.DeleteRequirement;
+namespace rmorais.bug_guzzler.UnitTests.DeleteRequirement;
 
 public class DeleteRequirementTest
 {

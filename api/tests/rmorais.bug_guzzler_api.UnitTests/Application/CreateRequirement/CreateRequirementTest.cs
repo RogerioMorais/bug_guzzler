@@ -5,7 +5,7 @@ using rmorais.bug_guzzler.Application.Interfaces;
 using UseCases=rmorais.bug_guzzler.Application.UseCases.Requirement.CreateRequirement;
 using FluentAssertions;
 
-namespace rmorais.bug_guzzler_api.UnitTests.Application.CreateRequirement;
+namespace rmorais.bug_guzzler.UnitTests.Application.CreateRequirement;
 
 public class CreateRequirementTest {
 

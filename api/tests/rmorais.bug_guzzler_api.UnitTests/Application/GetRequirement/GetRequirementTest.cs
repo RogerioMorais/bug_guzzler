@@ -5,7 +5,7 @@ using UserCase=rmorais.bug_guzzler.application.UseCases.Requirement;
 using rmorais.bug_guzzler.domain.Entity;
 using rmorais.bug_guzzler.domain.Repository;
 
-namespace rmorais.bug_guzzler_api.UnitTests.GetRequirement;
+namespace rmorais.bug_guzzler.UnitTests.GetRequirement;
 
 public class GetRequirementTest
 {
