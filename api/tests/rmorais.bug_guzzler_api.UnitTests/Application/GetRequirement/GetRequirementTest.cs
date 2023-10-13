@@ -1,11 +1,11 @@
 ﻿using FluentAssertions;
 using Moq;
 using rmorais.bug_guzzler_api.application.Exceptions;
-using rmorais.bug_guzzler_api.application.UseCases.Requirement.GetRequirement;
+using UserCase=rmorais.bug_guzzler_api.application.UseCases.Requirement;
 using rmorais.bug_guzzler_api.domain.Entity;
 using rmorais.bug_guzzler_api.domain.Repository;
 
-namespace rmorais.bug_guzzler_api.UnitTests;
+namespace rmorais.bug_guzzler_api.UnitTests.GetRequirement;
 
 public class GetRequirementTest
 {
@@ -21,8 +21,8 @@ public class GetRequirementTest
                     It.IsAny<CancellationToken>()
                 )).ReturnsAsync(requirement);
             
-            var input = new GetRequentInput(requirement.Id);
-            var useCase=new GetRequirement(repositorioMock.Object);
+            var input = new UserCase.GetRequentInput(requirement.Id);
+            var useCase=new UserCase.GetRequirement(repositorioMock.Object);
             var output = await useCase.Handle(input,CancellationToken.None);
 
                 repositorioMock.Verify(x => x.Get(
@@ -49,8 +49,8 @@ public class GetRequirementTest
                     It.IsAny<CancellationToken>()
                 )).ThrowsAsync(new NotFoundException("Requirement not Found"));
             
-            var input = new GetRequentInput(requirement.Id);
-            var useCase=new GetRequirement(repositorioMock.Object);
+            var input = new UserCase.GetRequentInput(requirement.Id);
+            var useCase=new UserCase.GetRequirement(repositorioMock.Object);
             var task =async()=> await useCase.Handle(input,CancellationToken.None);
 
             await task.Should().ThrowAsync<NotFoundException>();
