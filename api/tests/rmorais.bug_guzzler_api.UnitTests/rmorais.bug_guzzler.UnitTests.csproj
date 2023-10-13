@@ -26,8 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\rmorais.bug_guzzler_api.domain\rmorais.bug_guzzler_api.domain.csproj" />
-    <ProjectReference Include="..\..\src\rmorais.bug_guzzler_api.application\rmorais.bug_guzzler_api.application.csproj" />
+    <ProjectReference Include="../../src/rmorais.bug_guzzler_api.application/rmorais.bug_guzzler.application.csproj" />
+    <ProjectReference Include="../../src/rmorais.bug_guzzler_api.domain/rmorais.bug_guzzler.domain.csproj" />
   </ItemGroup>
 
 </Project>

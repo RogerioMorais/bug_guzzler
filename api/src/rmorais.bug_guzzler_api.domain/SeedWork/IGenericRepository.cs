@@ -1,5 +1,5 @@
-namespace rmorais.bug_guzzler_api.domain.SeedWork;
-using rmorais.bug_guzzler_api.domain.SeedWork;
+namespace rmorais.bug_guzzler.domain.SeedWork;
+using rmorais.bug_guzzler.domain.SeedWork;
 public interface IGenericRepository<TAggregate>: IRepository
 {
        public Task Insert(TAggregate aggregate,CancellationToken cancellationToken);

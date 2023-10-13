@@ -1,8 +1,8 @@
-using rmorais.bug_guzzler_api.domain.Repository;
-using Entity = rmorais.bug_guzzler_api.domain.Entity;
-using rmorais.bug_guzzler_api.Application.Interfaces;
+using rmorais.bug_guzzler.domain.Repository;
+using Entity = rmorais.bug_guzzler.domain.Entity;
+using rmorais.bug_guzzler.Application.Interfaces;
 
-namespace rmorais.bug_guzzler_api.Application.UseCases.Requirement.CreateRequirement;
+namespace rmorais.bug_guzzler.Application.UseCases.Requirement.CreateRequirement;
 
 public class CreateRequirement: ICreateRequirement
 {

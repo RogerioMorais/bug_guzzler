@@ -1,7 +1,7 @@
-using rmorais.bug_guzzler_api.domain.Entity;
-using rmorais.bug_guzzler_api.domain.SeedWork;
+using rmorais.bug_guzzler.domain.Entity;
+using rmorais.bug_guzzler.domain.SeedWork;
 
-namespace rmorais.bug_guzzler_api.domain.Repository;
+namespace rmorais.bug_guzzler.domain.Repository;
 
 public interface IRequirementRepositorory:IGenericRepository<Requirement>
 { 

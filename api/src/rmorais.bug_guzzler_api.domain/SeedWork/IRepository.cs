@@ -1,4 +1,4 @@
-namespace rmorais.bug_guzzler_api.domain.SeedWork;
+namespace rmorais.bug_guzzler.domain.SeedWork;
 
 public interface IRepository
 {

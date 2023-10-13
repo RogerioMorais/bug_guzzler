@@ -1,7 +1,7 @@
-﻿using rmorais.bug_guzzler_api.domain.SeedWork;
-using rmorais.bug_guzzler_api.domain.Validation;
+﻿using rmorais.bug_guzzler.domain.SeedWork;
+using rmorais.bug_guzzler.domain.Validation;
 
-namespace rmorais.bug_guzzler_api.domain.Entity;
+namespace rmorais.bug_guzzler.domain.Entity;
 
 public class Requirement : AggregateRoot
 {

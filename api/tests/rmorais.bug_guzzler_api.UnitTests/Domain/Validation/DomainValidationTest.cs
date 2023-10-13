@@ -1,7 +1,7 @@
 using Bogus;
 using FluentAssertions;
-using rmorais.bug_guzzler_api.domain.Exceptions;
-using rmorais.bug_guzzler_api.domain.Validation;
+using rmorais.bug_guzzler.domain.Exceptions;
+using rmorais.bug_guzzler.domain.Validation;
 
 namespace rmorais.bug_guzzler_api.UnitTests.Domain.Validation;
 

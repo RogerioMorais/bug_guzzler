@@ -1,7 +1,7 @@
-using DomainEntity=rmorais.bug_guzzler_api.domain.Entity;
+using DomainEntity=rmorais.bug_guzzler.domain.Entity;
 using FluentAssertions;
-using rmorais.bug_guzzler_api.domain.Exceptions;
-namespace rmorais.bug_guzzler_api.UnitTests.Domain.Entity.Requirements;
+using rmorais.bug_guzzler.domain.Exceptions;
+namespace rmorais.bug_guzzler.UnitTests.Domain.Entity.Requirements;
 
 public class RequirementsTest
 {

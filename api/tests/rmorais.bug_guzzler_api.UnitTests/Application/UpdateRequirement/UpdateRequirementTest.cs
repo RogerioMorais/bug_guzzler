@@ -1,11 +1,11 @@
 ﻿using Moq;
 using FluentAssertions;
-using rmorais.bug_guzzler_api.Application.Interfaces;
-using rmorais.bug_guzzler_api.domain.Repository;
-using useCase=rmorais.bug_guzzler_api.application.UseCases.Requirement;
-using rmorais.bug_guzzler_api.application.Exceptions;
+using rmorais.bug_guzzler.Application.Interfaces;
+using rmorais.bug_guzzler.domain.Repository;
+using useCase=rmorais.bug_guzzler.application.UseCases.Requirement;
+using rmorais.bug_guzzler.application.Exceptions;
 
-namespace rmorais.bug_guzzler_api.UnitTests.UpdateRequirement;
+namespace rmorais.bug_guzzler.UnitTests.UpdateRequirement;
 
 public class UpdateRequirementTest
 {

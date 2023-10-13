@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\rmorais.bug_guzzler_api.domain\rmorais.bug_guzzler_api.domain.csproj" />
+    <ProjectReference Include="../rmorais.bug_guzzler_api.domain/rmorais.bug_guzzler.domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

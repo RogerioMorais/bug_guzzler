@@ -1,9 +1,9 @@
 using FluentAssertions;
 using Moq;
-using useCase=rmorais.bug_guzzler_api.application.UseCases.Requirement;
-using rmorais.bug_guzzler_api.Application.Interfaces;
-using rmorais.bug_guzzler_api.domain.Entity;
-using rmorais.bug_guzzler_api.domain.Repository;
+using useCase=rmorais.bug_guzzler.application.UseCases.Requirement;
+using rmorais.bug_guzzler.Application.Interfaces;
+using rmorais.bug_guzzler.domain.Entity;
+using rmorais.bug_guzzler.domain.Repository;
 
 namespace rmorais.bug_guzzler_api.UnitTests.DeleteRequirement;
 

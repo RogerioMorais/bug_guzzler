@@ -1,5 +1,5 @@
 
-namespace rmorais.bug_guzzler_api.domain.Exceptions;
+namespace rmorais.bug_guzzler.domain.Exceptions;
 
 public class EntityValidationException : Exception
 {

@@ -1,8 +1,8 @@
 ﻿
-using rmorais.bug_guzzler_api.Application.Interfaces;
-using rmorais.bug_guzzler_api.domain.Repository;
+using rmorais.bug_guzzler.Application.Interfaces;
+using rmorais.bug_guzzler.domain.Repository;
 
-namespace rmorais.bug_guzzler_api.application.UseCases.Requirement;
+namespace rmorais.bug_guzzler.application.UseCases.Requirement;
 
 public class UpdateRequirement : IUpdateRequirement
 {   private readonly IUnitOfWork _unitOfWork;
@@ -18,7 +18,7 @@ public class UpdateRequirement : IUpdateRequirement
         requirement.Update(request.Description);
         await this._requirementRepositorory.Update(requirement,cancellationToken);   
         await this._unitOfWork.Commit(cancellationToken);
-        
+
         return new UpdateRequirementOutput(requirement.Id,
                                             requirement.Description,
                                             requirement.IsActive,

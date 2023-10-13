@@ -1,7 +1,7 @@
 ﻿using MediatR;
-using rmorais.bug_guzzler_api.domain.Repository;
+using rmorais.bug_guzzler.domain.Repository;
 
-namespace rmorais.bug_guzzler_api.application.UseCases.Requirement;
+namespace rmorais.bug_guzzler.application.UseCases.Requirement;
 
 public class GetRequirement : IGetRequirement
 {

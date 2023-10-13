@@ -1,4 +1,4 @@
-namespace rmorais.bug_guzzler_api.Application.Interfaces;
+namespace rmorais.bug_guzzler.Application.Interfaces;
 
 public interface IUnitOfWork 
 {

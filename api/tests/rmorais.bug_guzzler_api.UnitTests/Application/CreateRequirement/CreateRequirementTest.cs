@@ -1,8 +1,8 @@
 using Moq;
-using rmorais.bug_guzzler_api.domain.Entity;
-using rmorais.bug_guzzler_api.domain.Repository;
-using rmorais.bug_guzzler_api.Application.Interfaces;
-using UseCases=rmorais.bug_guzzler_api.Application.UseCases.Requirement.CreateRequirement;
+using rmorais.bug_guzzler.domain.Entity;
+using rmorais.bug_guzzler.domain.Repository;
+using rmorais.bug_guzzler.Application.Interfaces;
+using UseCases=rmorais.bug_guzzler.Application.UseCases.Requirement.CreateRequirement;
 using FluentAssertions;
 
 namespace rmorais.bug_guzzler_api.UnitTests.Application.CreateRequirement;

@@ -1,4 +1,4 @@
-﻿namespace rmorais.bug_guzzler_api.application.Exceptions;
+﻿namespace rmorais.bug_guzzler.application.Exceptions;
 
 public class NotFoundException: Exception
 {
