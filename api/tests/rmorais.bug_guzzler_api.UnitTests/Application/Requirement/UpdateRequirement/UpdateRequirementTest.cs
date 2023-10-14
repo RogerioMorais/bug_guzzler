@@ -5,7 +5,7 @@ using rmorais.bug_guzzler.domain.Repository;
 using useCase=rmorais.bug_guzzler.application.UseCases.Requirement;
 using rmorais.bug_guzzler.application.Exceptions;
 
-namespace rmorais.bug_guzzler.UnitTests.UpdateRequirement;
+namespace rmorais.bug_guzzler.UnitTests.Application.UpdateRequirement;
 
 public class UpdateRequirementTest
 {

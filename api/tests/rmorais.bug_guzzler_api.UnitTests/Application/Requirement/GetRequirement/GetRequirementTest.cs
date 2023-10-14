@@ -2,10 +2,10 @@
 using Moq;
 using rmorais.bug_guzzler.application.Exceptions;
 using UserCase=rmorais.bug_guzzler.application.UseCases.Requirement;
-using rmorais.bug_guzzler.domain.Entity;
+using Entity=rmorais.bug_guzzler.domain.Entity;
 using rmorais.bug_guzzler.domain.Repository;
 
-namespace rmorais.bug_guzzler.UnitTests.GetRequirement;
+namespace rmorais.bug_guzzler.UnitTests.Application.Requirement.GetRequirement;
 
 public class GetRequirementTest
 {
@@ -15,7 +15,7 @@ public class GetRequirementTest
     public async Task GetRequirement()
     {
             var repositorioMock = new Mock <IRequirementRepositorory>();
-            var requirement=new Requirement("Test Requirement");
+            var requirement=new Entity.Requirement("Test Requirement");
             repositorioMock.Setup(x => x.Get(
                     It.IsAny<Guid>(),
                     It.IsAny<CancellationToken>()
@@ -43,7 +43,7 @@ public class GetRequirementTest
     public async Task GetRequirementNotFound()
     {
             var repositorioMock = new Mock <IRequirementRepositorory>();
-            var requirement=new Requirement("Test Requirement");
+            var requirement=new Entity.Requirement("Test Requirement");
             repositorioMock.Setup(x => x.Get(
                     It.IsAny<Guid>(),
                     It.IsAny<CancellationToken>()

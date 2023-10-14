@@ -5,10 +5,10 @@ namespace rmorais.bug_guzzler.domain.Entity;
 
 public class Requirement : AggregateRoot
 {
-    public Requirement(string description, bool isactive=true)
+    public Requirement(string description, bool isActive=true)
         :base(){
         Description=description;
-        IsActive=isactive;
+        IsActive=isActive;
         CreatedAt=DateTime.Now;
         Validate();
     }
@@ -35,7 +35,6 @@ public class Requirement : AggregateRoot
     }
 
     public void Update(string? description=null){
-      //  this.Description= String.IsNullOrEmpty(description)?this.Description:description;
       this.Description= description??this.Description;
     }
 }

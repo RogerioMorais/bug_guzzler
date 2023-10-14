@@ -2,10 +2,10 @@ using FluentAssertions;
 using Moq;
 using useCase=rmorais.bug_guzzler.application.UseCases.Requirement;
 using rmorais.bug_guzzler.Application.Interfaces;
-using rmorais.bug_guzzler.domain.Entity;
+using Entity=rmorais.bug_guzzler.domain.Entity;
 using rmorais.bug_guzzler.domain.Repository;
 
-namespace rmorais.bug_guzzler.UnitTests.DeleteRequirement;
+namespace rmorais.bug_guzzler.UnitTests.Application.Requirement.DeleteRequirement;
 
 public class DeleteRequirementTest
 {
@@ -16,7 +16,7 @@ public class DeleteRequirementTest
         var repositorioMock = new Mock<IRequirementRepositorory>();
         var unitOfWorkMock = new Mock<IUnitOfWork>();
 
-        var requirement=new Requirement("Test Requirement");
+        var requirement=new Entity.Requirement("Test Requirement");
         repositorioMock.Setup(x=> x.Get(requirement.Id,
                                         It.IsAny<CancellationToken>()))
                                         .ReturnsAsync(requirement);

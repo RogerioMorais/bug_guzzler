@@ -1,11 +1,11 @@
 using Moq;
-using rmorais.bug_guzzler.domain.Entity;
+using Entity=rmorais.bug_guzzler.domain.Entity;
 using rmorais.bug_guzzler.domain.Repository;
 using rmorais.bug_guzzler.Application.Interfaces;
 using UseCases=rmorais.bug_guzzler.Application.UseCases.Requirement.CreateRequirement;
 using FluentAssertions;
 
-namespace rmorais.bug_guzzler.UnitTests.Application.CreateRequirement;
+namespace rmorais.bug_guzzler.UnitTests.Application.Requirement.CreateRequirement;
 
 public class CreateRequirementTest {
 
@@ -22,7 +22,7 @@ public class CreateRequirementTest {
 
         var output = await useCase.Handle(input,CancellationToken.None);
 
-        repositorioMock.Verify(repository=>repository.Insert(It.IsAny<Requirement>(),
+        repositorioMock.Verify(repository=>repository.Insert(It.IsAny<Entity.Requirement>(),
                                                              It.IsAny<CancellationToken>()
                                 ),
                                 Times.Once);
